@@ -1,6 +1,6 @@
 .catalog:
   name: "ISDPA Single"
-  version: "v0.7"
+  version: "0.7"
   minimum_rancher_version: v0.44.0
   description: "ISDPA Single Node"
   questions:
@@ -39,7 +39,7 @@
        label: "Host label"
        description: "Specify a Rancher host label here that will be used to determine where the service is deploy. This will determine what hosts can access the volumes managed by this stack. Default is location.dc=Azure"
        type: "string"
-       default: location.dc=Azure
+       default: "location.dc=Azure"
        required: true
 mariadb:
   scale: 1
