@@ -1,6 +1,6 @@
 .catalog:
   name: "ISDPA Single"
-  version: 7
+  version: 0.7
   description: |
     ISDPA Single Node
   questions:
