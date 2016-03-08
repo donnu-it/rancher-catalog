@@ -31,7 +31,7 @@
        label: "MySQL DB allias"
        description: "MySQL DB allias in settings.php on site"
      - variable: "drupal_port"
-        description: "Публичный порт Друпала"
+        description: "Drupal Public port"
         label: "Drupal port on host"
         required: true
         type: "int"

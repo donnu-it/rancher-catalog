@@ -5,27 +5,27 @@
   description: "ISDPA Single Node"
   questions:
     - variable: "mysql_root_password"
-      type: string
+      type: "string"
       required: true
       label: "MySQL Root Password"
       description: "Password given to the root mysql user"
     - variable: "mysql_database"
-      type: string
+      type: "string"
       required: true
       label: "MySQL Database Name"
       description: "MySQL database to create"
     - variable: "mysql_user"
-      type: string
+      type: "string"
       required: true
       description: "MySQL user for the created database"
       label: "MySQL DB User"
     - variable: "mysql_password"
-      type: string
+      type: "string"
       required: true
       label: "MySQL DB Password"
       description: "Password for the MySQL user of the created database"
     - variable: "mysql_allias_name"
-      type: string
+      type: "string"
       required: true
       label: "MySQL DB allias"
       description: "MySQL DB allias in settings.php on site"
@@ -34,7 +34,7 @@
        label: "Drupal port on host"
        required: true
        type: "int"
-       default: 10777
+       default: "10777"
     - variable: "host_label"
        label: "Host label"
        description: "Specify a Rancher host label here that will be used to determine where the service is deploy. This will determine what hosts can access the volumes managed by this stack. Default is location.dc=Azure"
