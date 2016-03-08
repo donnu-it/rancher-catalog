@@ -1,6 +1,6 @@
 .catalog:
   name: "Hadoop + Yarn"
-  version: "2.7.1-rancher1"
+  version: "2.1"
   description: "Hadoop + Yarn"
   minimum_rancher_version: v0.46.0
   questions:
