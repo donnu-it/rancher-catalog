@@ -30,17 +30,17 @@
       label: "MySQL DB allias"
       description: "MySQL DB allias in settings.php on site"
     - variable: "drupal_port"
-       description: "Публичный порт Друпала"
-       label: "Drupal port on host"
-       required: true
-       type: "int"
-       default: "10777"
+      description: "Drupal port on wfe"
+      label: "Drupal port on host"
+      type: "int"
+      default: "10777"
+      required: true
     - variable: "host_label"
-       label: "Host label"
-       description: "Specify a Rancher host label here that will be used to determine where the service is deploy."
-       type: "string"
-       default: "location.dc=Azure"
-       required: true
+      label: "Host label"
+      description: "Specify a Rancher host label here that will be used to determine where the service is deploy."
+      type: "string"
+      default: "location.dc=Azure"
+      required: true
 mariadb:
   scale: 1
 drupal:
