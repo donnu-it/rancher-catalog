@@ -15,7 +15,7 @@ mariadb:
   stdin_open: true
 drupal:
   ports:
-  - '${drupal_port}:80/tcp'
+  - 10771:80/tcp
   labels:
     io.rancher.container.pull_image: always
     io.rancher.scheduler.affinity:host_label_soft: ${host_label}

@@ -1,5 +1,0 @@
-name: isdpa
-description: |
-    Synchronous multi-master clusterMariaDB Galera Cluster & Drupal 7
-version: 10.0.22-rancher1
-category: APPS
