@@ -1,0 +1,48 @@
+.catalog:
+  name: "Galera DB"
+  version: 10.0.22-rancher1
+  description: |
+    Galera Cluster based on MariaDB 10.0.22
+  questions:
+    - variable: "mysql_root_password"
+      type: string
+      required: true
+      label: "MySQL Root Password"
+      description: "Password given to the root mysql user"
+    - variable: "mysql_database"
+      type: string
+      required: true
+      label: "MySQL Database Name"
+      description: "MySQL database to create"
+    - variable: "mysql_user"
+      type: string
+      required: true
+      description: "MySQL user for the created database"
+      label: "MySQL DB User"
+    - variable: "mysql_password"
+      type: string
+      required: true
+      label: "MySQL DB Password"
+      description: "Password for the MySQL user of the created database"
+    - variable: "HOST_LABEL"
+       label: "Host label"
+       description: "Specify a Rancher host label here that will be used to determine where the Convoy GlusterFS service is deploy. This will determine what hosts can access the volumes managed by this stack."
+       type: "string"
+       default: convoy.glusterfs=true
+       required: true
+isdpa:
+  scale: 3
+  metadata:
+    mysqld: |
+      innodb_file_per_table = 1
+      innodb_autoinc_lock_mode=2
+      query_cache_size=0
+      query_cache_type=0
+      innodb_flush_log_at_trx_commit=0
+      binlog_format=ROW
+      default-storage-engine=innodb
+      wsrep_provider=/usr/lib/galera/libgalera_smm.so
+      wsrep_provider_options="gcache.size = 2G"
+      wsrep_sst_method=mysqldump
+      wsrep_sst_auth=root:${mysql_root_password}
+      progress=1

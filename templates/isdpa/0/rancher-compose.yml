@@ -1,8 +1,8 @@
 .catalog:
-  name: "Galera DB"
-  version: 10.0.22-rancher1
+  name: "ISDPA Single"
+  version: 7
   description: |
-    Galera Cluster based on MariaDB 10.0.22
+    ISDPA Single Node
   questions:
     - variable: "mysql_root_password"
       type: string
@@ -24,25 +24,32 @@
       required: true
       label: "MySQL DB Password"
       description: "Password for the MySQL user of the created database"
-    - variable: "HOST_LABEL"
-       label: "Host label"
-       description: "Specify a Rancher host label here that will be used to determine where the Convoy GlusterFS service is deploy. This will determine what hosts can access the volumes managed by this stack."
-       type: "string"
-       default: convoy.glusterfs=true
+    - variable: "mysql_allias_name"
+      type: string
+      required: true
+      label: "MySQL DB allias"
+      description: "MySQL DB allias in settings.php on site"
+    - variable: "drupal_port"
+       description: "Публичный порт Друпала"
+       label: "Drupal port on host"
        required: true
-isdpa:
-  scale: 3
-  metadata:
-    mysqld: |
-      innodb_file_per_table = 1
-      innodb_autoinc_lock_mode=2
-      query_cache_size=0
-      query_cache_type=0
-      innodb_flush_log_at_trx_commit=0
-      binlog_format=ROW
-      default-storage-engine=innodb
-      wsrep_provider=/usr/lib/galera/libgalera_smm.so
-      wsrep_provider_options="gcache.size = 2G"
-      wsrep_sst_method=mysqldump
-      wsrep_sst_auth=root:${mysql_root_password}
-      progress=1
+       type: "int"
+       default: 10777
+    - variable: "host_label"
+       label: "Host label"
+       description: "Specify a Rancher host label here that will be used to determine where the service is deploy. This will determine what hosts can access the volumes managed by this stack. Default is location.dc=Azure"
+       type: "string"
+       default: location.dc=Azure
+       required: true
+mariadb:
+  scale: 1
+drupal:
+  scale: 1
+  health_check:
+    port: 80
+    interval: 2000
+    unhealthy_threshold: 3
+    strategy: recreate
+    request_line: GET / HTTP/1.0
+    healthy_threshold: 2
+    response_timeout: 2000
