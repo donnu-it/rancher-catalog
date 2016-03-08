@@ -24,7 +24,13 @@
       required: true
       label: "MySQL DB Password"
       description: "Password for the MySQL user of the created database"
-galera:
+    - variable: "HOST_LABEL"
+       label: "Host label"
+       description: "Specify a Rancher host label here that will be used to determine where the Convoy GlusterFS service is deploy. This will determine what hosts can access the volumes managed by this stack."
+       type: "string"
+       default: convoy.glusterfs=true
+       required: true
+isdpa:
   scale: 3
   metadata:
     mysqld: |
@@ -40,12 +46,3 @@ galera:
       wsrep_sst_method=mysqldump
       wsrep_sst_auth=root:${mysql_root_password}
       progress=1
-galera-lb:
-  scale: 1
-  load_balancer_config: {}
-  health_check:
-    port: 42
-    interval: 2000
-    unhealthy_threshold: 3
-    healthy_threshold: 2
-    response_timeout: 2000

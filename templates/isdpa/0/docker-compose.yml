@@ -33,20 +33,16 @@ galera-leader-forwarder:
 galera:
   image: rancher/galera-conf:v0.2.0
   labels:
-    io.rancher.sidekicks: mariadb-galera-data,mariadb-galera-server,galera-leader-forwarder
     io.rancher.container.hostname_override: container_name
-    io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
   volumes_from:
     - 'mariadb-galera-data'
   stdin_open: true
   tty: true
   command: /bin/bash
 
-galera-lb:
-  expose:
-  - 3306:3307/tcp
-  tty: true
-  image: rancher/load-balancer-service
-  links:
-  - galera:galera
-  stdin_open: true
+isdpa:
+   image:soundman/data:isdpa050316v2
+   labels:
+     io.rancher.sidekicks: mariadb-galera-data,mariadb-galera-server,galera-leader-forwarder
+     io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
+   command: /bin/bash
