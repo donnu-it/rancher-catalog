@@ -1,8 +1,8 @@
 .catalog:
   name: "ISDPA Single"
   version: "v0.7"
-  description: |
-    ISDPA Single Node
+  minimum_rancher_version: v0.44.0
+  description: "ISDPA Single Node"
   questions:
     - variable: "mysql_root_password"
       type: string
