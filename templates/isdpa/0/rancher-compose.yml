@@ -37,7 +37,7 @@
        default: "10777"
     - variable: "host_label"
        label: "Host label"
-       description: "Specify a Rancher host label here that will be used to determine where the service is deploy. This will determine what hosts can access the volumes managed by this stack. Default is location.dc=Azure"
+       description: "Specify a Rancher host label here that will be used to determine where the service is deploy."
        type: "string"
        default: "location.dc=Azure"
        required: true
