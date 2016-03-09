@@ -6,7 +6,7 @@ mariadb:
     MYSQL_PASSWORD: "${mysql_password}"
   labels:
     io.rancher.container.hostname_override: container_name
-    io.rancher.scheduler.affinity:host_label_soft: ${host_label
+    io.rancher.scheduler.affinity:host_label_soft: ${host_label}
     io.rancher.container.pull_image: always
   tty: true
   image: mariadb
