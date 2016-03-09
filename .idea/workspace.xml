@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="382fb64d-79eb-4f8e-ac37-d294b8762851" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" afterPath="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" afterPath="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" />
     </list>
     <ignored path="rancher-catalog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.044619422">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.44619423">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -385,8 +384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044619422">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.44619423">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding />
         </state>
       </provider>
