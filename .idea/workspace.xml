@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="382fb64d-79eb-4f8e-ac37-d294b8762851" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" afterPath="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" afterPath="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" />
     </list>
     <ignored path="rancher-catalog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.44619423">
+              <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rancher-compose.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="rancher-compose.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7362205">
-              <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -62,8 +62,8 @@
         <option value="$PROJECT_DIR$/templates/isdpa/0/README.md" />
         <option value="$PROJECT_DIR$/templates/isdpa/config.yml" />
         <option value="$PROJECT_DIR$/templates/isdpa/catalogIcon-isdpa.svg" />
-        <option value="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" />
         <option value="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" />
+        <option value="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -374,18 +374,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml">
+    <entry file="file://$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7362205">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.44619423">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
           <folding />
         </state>
       </provider>
