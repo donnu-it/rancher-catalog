@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="382fb64d-79eb-4f8e-ac37-d294b8762851" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" afterPath="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" afterPath="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" />
     </list>
     <ignored path="rancher-catalog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44619423">
-              <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.4238845">
+              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -38,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+              <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -61,9 +62,9 @@
         <option value="$PROJECT_DIR$/templates/etcd/0/rancher-compose.yml" />
         <option value="$PROJECT_DIR$/templates/isdpa/0/README.md" />
         <option value="$PROJECT_DIR$/templates/isdpa/config.yml" />
-        <option value="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" />
         <option value="$PROJECT_DIR$/templates/isdpa/catalogIcon-isdpa.svg" />
         <option value="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" />
       </list>
     </option>
   </component>
@@ -77,8 +78,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1007" />
-    <option name="y" value="63" />
+    <option name="x" value="1122" />
+    <option name="y" value="77" />
     <option name="width" value="1441" />
     <option name="height" value="900" />
   </component>
@@ -217,7 +218,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1007" y="63" width="1441" height="900" extended-state="0" />
+    <frame x="1122" y="77" width="1441" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24280702" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -377,15 +378,15 @@
     <entry file="file://$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44619423">
-          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.4238845">
+          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding />
         </state>
       </provider>

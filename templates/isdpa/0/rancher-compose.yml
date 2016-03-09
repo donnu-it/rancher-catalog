@@ -1,47 +1,46 @@
 .catalog:
   name: "ISDPA Single"
   version: "0.7"
-  minimum_rancher_version: v0.44.0
   description: "ISDPA Single Node"
   questions:
-    - variable: "mysql_root_password"
-      type: string
+    - variable: "MYSQL_ROOT_PASSWORD"
+      type: "string"
       required: true
       label: "MySQL Root Password"
       description: "Password given to the root mysql user"
-    - variable: "mysql_database"
-      type: string
+    - variable: "MYSQL_DB"
+      type: "string"
       required: true
       label: "MySQL Database Name"
       default: "isdpa"
       description: "MySQL database to create"
-    - variable: "mysql_user"
-      type: string
+    - variable: "MYSQL_USER"
+      type: "string"
       required: true
       description: "MySQL user for the created database"
       default: "isdpa"
       label: "MySQL DB User"
-    - variable: "mysql_password"
-      type: string
+    - variable: "MYSQL_PWD"
+      type: "string"
       required: true
       label: "MySQL DB Password"
       description: "Password for the MySQL user of the created database"
-    - variable: "mysql_allias_name"
-      type: string
+    - variable: "MYSQL_ALIAS"
+      type: "string"
       required: true
       label: "MySQL DB allias"
       description: "MySQL DB allias in settings.php on site"
       default: "galera"
-    - variable: "drupal_port"
+    - variable: "DRUPAL_PORT"
       description: "Drupal port on wfe"
       label: "Drupal port on host"
-      type: int
-      default: "10777"
+      type: "int"
+      default: 10777
       required: true
-    - variable: "host_label"
+    - variable: "HOST_LABEL"
       label: "Host label"
       description: "Specify a Rancher host label here that will be used to determine where the service is deploy."
-      type: string
+      type: "string"
       default: "location.dc=Azure"
       required: true
 mariadb:

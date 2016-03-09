@@ -1,12 +1,12 @@
 mariadb:
   environment:
-    MYSQL_ROOT_PASSWORD: "${mysql_root_password}"
-    MYSQL_DATABASE: "${mysql_database}"
-    MYSQL_USER: "${mysql_user}"
-    MYSQL_PASSWORD: "${mysql_password}"
+    MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+    MYSQL_DATABASE: "${MYSQL_DB}"
+    MYSQL_USER: "${MYSQL_USER}"
+    MYSQL_PASSWORD: "${MYSQL_PWD}"
   labels:
     io.rancher.container.hostname_override: container_name
-    io.rancher.scheduler.affinity:host_label_soft: "${host_label}"
+    io.rancher.scheduler.affinity:host_label_soft: ${HOST_LABEL}
     io.rancher.container.pull_image: always
   tty: true
   image: mariadb
@@ -15,13 +15,13 @@ mariadb:
   stdin_open: true
 drupal:
   ports:
-  - ${drupal_port}:80/tcp
+  - ${DRUPAL_PORT}:80/tcp
   labels:
     io.rancher.container.pull_image: always
-    io.rancher.scheduler.affinity:host_label_soft: "${host_label}"
+    io.rancher.scheduler.affinity:host_label_soft: ${HOST_LABEL}
     io.rancher.container.hostname_override: container_name
   tty: true
   image: soundman/data:isdpa070316v1
   links:
-  - mariadb: "${mysql_allias_name}"
+  - mariadb: "${MYSQL_ALIAS}"
   stdin_open: true
