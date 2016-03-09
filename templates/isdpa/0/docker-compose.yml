@@ -1,6 +1,6 @@
 drupal:
   ports:
-  - 10778:80/tcp
+  - ${DRUPAL_PORT}:80
   labels:
     io.rancher.container.pull_image: always
     io.rancher.scheduler.affinity:host_label_soft: ${HOST_LABEL}
