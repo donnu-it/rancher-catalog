@@ -3,8 +3,8 @@ drupal:
   - ${DRUPAL_PORT}:80
   labels:
     io.rancher.container.pull_image: always
-#    io.rancher.scheduler.affinity:host_label_soft: ${HOST_LABEL}
-    io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:host_label_soft: ${HOST_LABEL}
+#    io.rancher.container.hostname_override: container_name
   tty: true
   image: soundman/data:isdpa070316v1
   links:
@@ -17,8 +17,8 @@ mariadb:
     MYSQL_USER: "${MYSQL_USER}"
     MYSQL_PASSWORD: "${MYSQL_PWD}"
   labels:
-    io.rancher.container.hostname_override: container_name
-#    io.rancher.scheduler.affinity:host_label_soft: ${HOST_LABEL}
+#    io.rancher.container.hostname_override: container_name
+    io.rancher.scheduler.affinity:host_label_soft: ${HOST_LABEL}
     io.rancher.container.pull_image: always
   tty: true
   image: mariadb
