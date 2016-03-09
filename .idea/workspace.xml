@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="382fb64d-79eb-4f8e-ac37-d294b8762851" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" afterPath="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" afterPath="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" />
     </list>
     <ignored path="rancher-catalog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4238845">
-              <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.5800525">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -63,8 +62,8 @@
         <option value="$PROJECT_DIR$/templates/isdpa/0/README.md" />
         <option value="$PROJECT_DIR$/templates/isdpa/config.yml" />
         <option value="$PROJECT_DIR$/templates/isdpa/catalogIcon-isdpa.svg" />
-        <option value="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" />
         <option value="$PROJECT_DIR$/templates/isdpa/0/rancher-compose.yml" />
+        <option value="$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -385,8 +384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/isdpa/0/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4238845">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.5800525">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
           <folding />
         </state>
       </provider>

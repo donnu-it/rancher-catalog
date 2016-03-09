@@ -1,3 +1,15 @@
+drupal:
+  ports:
+  - ${DRUPAL_PORT}:80/tcp
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.scheduler.affinity:host_label_soft: ${HOST_LABEL}
+    io.rancher.container.hostname_override: container_name
+  tty: true
+  image: soundman/data:isdpa070316v1
+  links:
+  - mariadb: "${MYSQL_ALIAS}"
+  stdin_open: true
 mariadb:
   environment:
     MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
@@ -12,16 +24,4 @@ mariadb:
   image: mariadb
   volumes:
   - /home/donnuadmin/isdpa/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
-  stdin_open: true
-drupal:
-  ports:
-  - ${DRUPAL_PORT}:80/tcp
-  labels:
-    io.rancher.container.pull_image: always
-    io.rancher.scheduler.affinity:host_label_soft: ${HOST_LABEL}
-    io.rancher.container.hostname_override: container_name
-  tty: true
-  image: soundman/data:isdpa070316v1
-  links:
-  - mariadb: "${MYSQL_ALIAS}"
   stdin_open: true
