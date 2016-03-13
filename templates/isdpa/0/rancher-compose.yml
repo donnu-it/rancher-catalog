@@ -47,11 +47,3 @@ mariadb:
   scale: 1
 drupal:
   scale: 1
-  health_check:
-    port: 80
-    interval: 2000
-    unhealthy_threshold: 3
-    strategy: recreate
-    request_line: GET / HTTP/1.0
-    healthy_threshold: 2
-    response_timeout: 2000
