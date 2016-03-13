@@ -1,6 +1,6 @@
 .catalog:
   name: "ISDPA Single"
-  version: "0.7"
+  version: "0.8"
   description: "ISDPA Single Node"
   questions:
     - variable: "MYSQL_ROOT_PASSWORD"
