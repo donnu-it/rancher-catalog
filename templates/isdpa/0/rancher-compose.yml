@@ -35,7 +35,7 @@
       description: "Drupal port on wfe"
       label: "Drupal port on host"
       type: "int"
-      default: 10777
+      default: "10777"
       required: true
     - variable: "HOST_LABEL"
       label: "Host label"
