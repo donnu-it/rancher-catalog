@@ -8,7 +8,7 @@ drupal:
     io.rancher.container.hostname_override: container_name
   tty: true
   links:
-  - mariadb: galera
+  - mariadb: "${MYSQL_ALIAS}"
   stdin_open: true
 mariadb:
   environment:
