@@ -1,0 +1,36 @@
+.catalog:
+  name: "gitlab"
+  version: "8.5.5"
+  description: |
+    Dockerized gitlab web server
+  questions:
+    - variable: "GITLAB_SECRETS_DB_KEY_BASE"
+      description: "GITLAB_SECRETS_DB_KEY_BASE"
+      label: "GITLAB_SECRETS_DB_KEY_BASE"
+      required: true
+      default: "long-and-random-alphanumeric-string"
+      type: "string"
+    - variable: "HTTP_PORT"
+      description: "Web port"
+      label: "Web port on host"
+      type: "int"
+      default: "10080"
+      required: true
+    - variable: "SSH_PORT"
+      description: "SSH port"
+      label: "SSH port on host"
+      type: "int"
+      default: "10022"
+      required: true
+    - variable: "GITLAB_HOSTE"
+      description: "GITLAB_HOST"
+      label: "GITLAB_HOST"
+      required: true
+      default: "localhost"
+      type: "string"
+postgresql:
+  scale: 1
+gitlab:
+  scale: 1
+redis:
+  scale: 1

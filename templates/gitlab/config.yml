@@ -1,0 +1,5 @@
+name: gitlab
+description: |
+  Dockerized gitlab web server
+version: 8.5.5
+category: Dev
